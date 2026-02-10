@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Preferencias-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="Preferencias" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="Preferencias" customModule="ColorFit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ENq-Tu-7ur">
+                                <rect key="frame" x="23.999999999999996" y="179" width="56.666666666666657" height="28.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0a4-9s-zwC">
+                                <rect key="frame" x="146" y="357.66666666666669" width="101" height="32"/>
+                                <segments>
+                                    <segment title="Light"/>
+                                    <segment title="Dark"/>
+                                </segments>
+                                <connections>
+                                    <action selector="tappedModeSegmented:" destination="Y6W-OH-hqX" eventType="valueChanged" id="Pet-yw-vgv"/>
+                                </connections>
+                            </segmentedControl>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ayZ-RV-atV">
+                                <rect key="frame" x="144" y="448.66666666666669" width="111" height="31"/>
+                                <connections>
+                                    <action selector="tappedRengerSlider:" destination="Y6W-OH-hqX" eventType="valueChanged" id="xWX-Hy-nEp"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Zv-X1-VX6">
+                                <rect key="frame" x="24" y="751.33333333333337" width="345" height="42.666666666666629"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Ver resumo">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="24"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="tappedResumoButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="yjR-Lp-TGM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ayZ-RV-atV" firstAttribute="leading" secondItem="0a4-9s-zwC" secondAttribute="leading" id="0Ma-Je-JCx"/>
+                            <constraint firstItem="ayZ-RV-atV" firstAttribute="top" secondItem="0a4-9s-zwC" secondAttribute="bottom" constant="60" id="6LQ-Tz-Ipg"/>
+                            <constraint firstItem="0a4-9s-zwC" firstAttribute="top" secondItem="ENq-Tu-7ur" secondAttribute="bottom" constant="150" id="9Iq-Ug-118"/>
+                            <constraint firstItem="ENq-Tu-7ur" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="Eux-sm-6XT"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="6Zv-X1-VX6" secondAttribute="trailing" constant="24" id="VcS-aJ-J7J"/>
+                            <constraint firstItem="0a4-9s-zwC" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Zqt-w3-OxZ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ayZ-RV-atV" secondAttribute="trailing" constant="140" id="eF9-uG-Q8c"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="6Zv-X1-VX6" secondAttribute="bottom" constant="24" id="iUV-eI-F5e"/>
+                            <constraint firstItem="6Zv-X1-VX6" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="sOq-R1-ptI"/>
+                            <constraint firstItem="ENq-Tu-7ur" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="120" id="z9R-vw-GwS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="modeSegmentedControl" destination="0a4-9s-zwC" id="bwB-wg-euE"/>
+                        <outlet property="nomeLabel" destination="ENq-Tu-7ur" id="YRA-sO-hfy"/>
+                        <outlet property="rangerSlider" destination="ayZ-RV-atV" id="d3o-jj-Ye5"/>
+                        <outlet property="resumoButton" destination="6Zv-X1-VX6" id="TPo-E0-fOH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
