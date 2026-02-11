@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tela3-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="tela3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="tela3" customModule="navegacoes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tela 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qpa-JA-maO">
+                                <rect key="frame" x="173.66666666666666" y="156" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAF-oq-6qV">
+                                <rect key="frame" x="138" y="383" width="117" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Proxima tela"/>
+                                <connections>
+                                    <action selector="tappedNextButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="FjU-rB-Nzf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cb1-kk-ER0">
+                                <rect key="frame" x="137.66666666666666" y="454" width="118" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Tela anterior"/>
+                                <connections>
+                                    <action selector="tappedPreviousButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="PWp-Ac-q3P"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="cb1-kk-ER0" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="LnB-NZ-nFm"/>
+                            <constraint firstItem="cb1-kk-ER0" firstAttribute="top" secondItem="CAF-oq-6qV" secondAttribute="bottom" constant="36" id="anu-cg-rqp"/>
+                            <constraint firstItem="Qpa-JA-maO" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="go9-Dj-0fi"/>
+                            <constraint firstItem="CAF-oq-6qV" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="hw2-dj-YyJ"/>
+                            <constraint firstItem="Qpa-JA-maO" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="97" id="uwS-v8-ZzO"/>
+                            <constraint firstItem="CAF-oq-6qV" firstAttribute="top" secondItem="Qpa-JA-maO" secondAttribute="bottom" constant="206" id="xFs-Cv-bJN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
